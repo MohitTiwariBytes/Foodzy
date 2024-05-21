@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="login.css" />
+    <title>Foodzy - Login</title>
+  </head>
+  <body>
+    <!-- Logged In -->
+
+    <div class="userProfileContainer" id="profile">
+      <div class="names">
+        <h1 id="userNameSlot"></h1>
+        <span id="EmailSlot"></span>
+      </div>
+      <div class="loadingLogin">
+        <span id="loading" class="loader"></span>
+      </div>
+
+      <div class="nav-parent">
+        <div class="navbar"></div>
+      </div>
+
+      <div class="nav-icons">
+        <div class="icons"></div>
+      </div>
+    </div>
+
+    <div class="logOutButton" id="LogOutBtnContainer">
+      <button id="logOutButton">Logout</button>
+      <div class="backBtn">
+        <a id="backBtn" href="index.html">Back to Home</a>
+      </div>
+    </div>
+    <!-- Not Logged In -->
+
+    <div id="loginContainer" class="container">
+      <div class="header">
+        <h1>Foodzy</h1>
+        <h1 id="nameHeader"></h1>
+        <h4 id="abcd">SignUp</h4>
+      </div>
+      <div class="signUpParent">
+        <div class="signUp">
+          <div id="switchBtn" class="switchBtn">
+            <button id="switchSignup">SignUp</button>
+            <button id="switchLogin">Login</button>
+          </div>
+          <div id="signUpCard" class="signUpCard">
+            <input id="email" type="text" placeholder="Email" />
+            <input id="username" type="text" placeholder="Username" />
+            <input id="password" type="password" placeholder="Password" />
+            <button id="SignUpButton">Sign Up</button>
+            <button id="LoginBtn">Login</button>
+          </div>
+        </div>
+      </div>
+      <div class="backBtnParent">
+        <div class="backBtn">
+          <a id="backBtn" href="index.html">Back to Home</a>
+        </div>
+      </div>
+
+      <h1 id="note">Reload/Switch this page to see the new interface.</h1>
+    </div>
+  </body>
+  <script
+    type="module"
+    src="https://www.gstatic.com/firebasejs/10.8.1/firebase-app.js"
+  ></script>
+  <script
+    type="module"
+    src="https://www.gstatic.com/firebasejs/10.8.1/firebase-auth.js"
+  ></script>
+  <script
+    type="module"
+    src="https://www.gstatic.com/firebasejs/10.8.1/firebase-analytics.js"
+  ></script>
+  <script
+    type="module"
+    src="https://www.gstatic.com/firebasejs/10.8.1/firebase-database.js"
+  ></script>
+
+  <script type="module" src="LoginBackend/index.js"></script>
+  <script
+    src="https://kit.fontawesome.com/7879192102.js"
+    crossorigin="anonymous"
+  ></script>
+</html>

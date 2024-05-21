@@ -1,0 +1,365 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: #f5f5f5;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-parent {
+  display: flex;
+  width: 100%;
+  height: 81px;
+  background: #ffb534;
+  padding: 12px;
+  text-align: center;
+  align-items: center;
+}
+
+.nav-icons {
+  margin-top: -105px;
+  height: 105px;
+}
+
+.icons {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-left: -12px;
+}
+
+.icons i {
+  overflow-y: hidden;
+  margin-right: 17px;
+  margin-left: 17px;
+  color: black;
+  transition: all 0.4s ease;
+}
+
+.icons i:hover {
+  color: rgb(63, 62, 62);
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  margin: 40px 0;
+}
+
+.search {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 57px;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+input[type="text"] {
+  background-color: #fff;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  padding: 12px;
+  width: 300px;
+}
+.btn {
+  cursor: pointer;
+}
+button[type="submit"] {
+  background-color: #007bff;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 12px 20px;
+  transition: background-color 0.2s;
+}
+
+#SearchBtn {
+  padding: 12px;
+  border-radius: 12px;
+  border: 0.5px solid black;
+  transition: all 0.4s ease;
+  background: black;
+  color: white;
+}
+
+#SearchBtn:hover {
+  background-color: #464646;
+  color: white;
+  cursor: pointer;
+}
+
+#results {
+  display: grid;
+  gap: 40px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  margin: 40px 0;
+}
+
+#results > div {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+#results img {
+  border-radius: 8px;
+  margin-bottom: 20px;
+  object-fit: cover;
+  height: 200px;
+  width: 100%;
+}
+
+#results h3 {
+  color: #333;
+  font-size: 24px;
+  margin: 0;
+}
+
+#results ul {
+  margin: 0;
+  padding: 0;
+}
+
+#results li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+#results a {
+  background-color: #ffb534;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 16px;
+  padding: 12px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.2s;
+}
+
+#results a:hover {
+  background-color: #fdbe50;
+}
+
+.unableToFind {
+  display: flex;
+  width: 350px;
+  font-size: 0.7rem;
+  text-align: center;
+  padding: 16px;
+  background-color: rgb(250, 119, 119);
+  border-radius: 5px;
+  border: 2px solid red;
+}
+
+.unableToFind h2 {
+  width: 100%;
+}
+
+.unableToFindParent {
+  width: 100%;
+  display: none;
+  justify-content: center;
+  margin-top: 80px;
+}
+
+.options {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 23px;
+  flex-wrap: wrap;
+}
+
+.options span {
+  background: rgb(250, 119, 119);
+  padding: 1px 3px;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin-left: 7px;
+  font-size: 14px;
+  margin-top: 12px;
+}
+
+.options span:hover {
+  cursor: pointer;
+}
+
+.loading {
+  overflow-y: hidden;
+  overflow-x: hidden;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 28px;
+  height: 100%;
+}
+
+#loading {
+  display: none;
+}
+
+.loader {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  position: relative;
+  animation: rotate 1s linear infinite;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+.loader::before {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  inset: 0px;
+  border-radius: 50%;
+  border: 5px solid #2a2b29;
+  animation: prixClipFix 2s linear infinite;
+}
+
+.name {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 23px;
+  margin-top: 80px;
+}
+
+#name {
+  font-family: "Unbounded", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  margin-left: 15px;
+}
+
+.image {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.image img {
+  margin-top: 24px;
+}
+
+.bottomNav {
+  display: none;
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes prixClipFix {
+  0% {
+    clip-path: polygon(50% 50%, 0 0, 0 0, 0 0, 0 0, 0 0);
+  }
+  25% {
+    clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 0, 100% 0, 100% 0);
+  }
+  50% {
+    clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 100%, 100% 100%, 100% 100%);
+  }
+  75% {
+    clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 100%, 0 100%, 0 100%);
+  }
+  100% {
+    clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 100%, 0 100%, 0 0);
+  }
+}
+
+@media (max-width: 463px) {
+  .search button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 23px;
+  }
+
+  .unableToFindParent {
+    width: 90%;
+    margin-left: 18px;
+  }
+}
+
+@media (max-width: 670px) {
+  .nav-icons {
+    display: none;
+  }
+
+  .nav-parent {
+    display: flex;
+    justify-content: center;
+  }
+
+  .bottomNav {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #fdbe50;
+    height: 67px;
+  }
+
+  .iconsBottom {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .iconsBottom i {
+    overflow-y: hidden;
+    margin-right: 27px;
+    margin-left: 27px;
+    color: black;
+    transition: all 0.4s ease;
+  }
+
+  .iconsBottom i:hover {
+    color: rgb(63, 62, 62);
+  }
+}
+
+#addFavoriteParent {
+  display: flex;
+  align-items: flex-start;
+  /* height: 100%; */
+  justify-content: center;
+  margin-top: 30px;
+  overflow-y: hidden;
+}
+
+#addFavorite {
+  overflow-y: hidden;
+}

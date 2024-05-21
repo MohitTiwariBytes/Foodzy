@@ -1,0 +1,265 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  overflow-x: hidden;
+}
+
+body {
+  height: 100%;
+  background: rgb(223, 221, 221);
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+}
+
+.backBtn {
+  width: 117px;
+  padding: 8px;
+  border: 1px solid black;
+  background-color: black;
+  border-radius: 5px;
+}
+
+#backBtn {
+  text-decoration: none;
+  color: white;
+}
+
+.signUp {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 20px;
+  width: 300px;
+  text-align: center;
+  align-items: center;
+  background-color: white;
+  padding: 26px;
+  height: 300px;
+  border-radius: 15px;
+}
+
+.signUpParent {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: -10px;
+  align-items: center;
+}
+
+.signUpCard input {
+  margin-top: 12px;
+  padding: 12px;
+  width: 200px;
+}
+
+#SignUpButton {
+  margin-top: 12px;
+  width: 200px;
+  text-align: center;
+  background-color: #ffb534;
+  padding: 12px;
+  border: 1px solid black;
+  border-radius: 7px;
+  transition: all 0.3s ease;
+}
+
+#SignUpButton:hover {
+  background-color: #fdc461;
+  cursor: pointer;
+}
+
+#LoginBtn {
+  margin-top: 12px;
+  width: 200px;
+  text-align: center;
+  background-color: #ffb534;
+  padding: 12px;
+  border: 1px solid black;
+  border-radius: 7px;
+  transition: all 0.3s ease;
+  display: none;
+}
+
+#LoginBtn:hover {
+  background-color: #fdc461;
+  cursor: pointer;
+}
+
+.backBtnParent {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 24px;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  margin-top: 55px;
+}
+
+.switchBtn {
+  display: flex;
+  align-items: flex-start;
+  margin-top: -41px;
+  max-height: 117px;
+  height: 100%;
+  align-items: flex-start;
+}
+
+.signUpCard {
+  margin-top: -44px;
+}
+
+.switchBtn button {
+  padding: 10px;
+  width: 100px;
+  font-size: medium;
+  background-color: transparent;
+  border: 1px solid black;
+  transform: scale(1.5px);
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  margin-left: 10px;
+  transition: all 0.3s ease;
+}
+
+.switchBtn button:hover {
+  cursor: pointer;
+}
+
+.loadingLogin {
+  overflow-y: hidden;
+  overflow-x: hidden;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  height: 100%;
+}
+
+.loader {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  position: relative;
+  animation: rotate 1s linear infinite;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+.loader::before {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  inset: 0px;
+  border-radius: 50%;
+  border: 5px solid #2a2b29;
+  animation: prixClipFix 2s linear infinite;
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes prixClipFix {
+  0% {
+    clip-path: polygon(50% 50%, 0 0, 0 0, 0 0, 0 0, 0 0);
+  }
+  25% {
+    clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 0, 100% 0, 100% 0);
+  }
+  50% {
+    clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 100%, 100% 100%, 100% 100%);
+  }
+  75% {
+    clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 100%, 0 100%, 0 100%);
+  }
+  100% {
+    clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 100%, 0 100%, 0 0);
+  }
+}
+
+#switchSignup {
+  background-color: #fdc461;
+  transition: all 0.3s ease;
+}
+
+.userProfileContainer {
+  display: block;
+  text-align: center;
+}
+
+.names {
+  background: #fdc461;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+#userNameSlot {
+  font-size: 2.3rem;
+}
+
+#EmailSlot {
+  font-size: 1.3rem;
+}
+
+.logOutButton {
+  width: 100%;
+  height: 100%;
+  display: none;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+#logOutButton {
+  padding: 12px;
+  width: 120px;
+  border: 3px solid red;
+  border-radius: 8px;
+  background-color: lightcoral;
+}
+
+#logOutButton:hover {
+  cursor: pointer;
+}
+
+#note {
+  font-size: 1.3rem;
+  text-align: center;
+  margin-top: 21px;
+  display: none;
+}
+
+#backBtn {
+  text-decoration: none;
+  color: white;
+}
+
+.backBtn {
+  width: 117px;
+  padding: 8px;
+  border: 1px solid black;
+  background-color: black;
+  border-radius: 5px;
+  margin-top: 50px;
+}

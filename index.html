@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foodzy - Home</title>
+    <link rel="stylesheet" href="home.css" />
+    <script
+      src="https://kit.fontawesome.com/7879192102.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Your content goes here -->
+    </div>
+
+    <div class="nav-parent">
+      <div class="navbar">
+        <h1>Foodzy</h1>
+      </div>
+    </div>
+
+    <div class="nav-icons">
+      <div class="icons">
+        <a href="discover.html">
+          <i class="fa-solid fa-compass fa-2x"></i>
+        </a>
+
+        <a href="index.html">
+          <i class="fa-solid fa-house fa-2x"></i>
+        </a>
+
+        <a href="login.html">
+          <i class="fa-solid fa-user fa-2x"></i>
+        </a>
+      </div>
+    </div>
+
+    <div class="name">
+      <h1>Created by <span id="name">Mohit</span></h1>
+    </div>
+
+    <div class="search">
+      <form>
+        <input type="text" id="search" placeholder="Enter ingredients" />
+        <button id="SearchBtn" type="button" class="btn">Search</button>
+      </form>
+      <div class="optionsParent">
+        <div class="options">
+          <span>Tomatoes</span>
+          <span>Carrots</span>
+          <span>Cucumbers</span>
+          <span>Onion</span>
+          <span>Broccoli</span>
+          <span>Cabbage</span>
+          <span>Spinach</span>
+          <span>Asparagus</span>
+          <span>Sweetcorn</span>
+          <span>Green Beans</span>
+        </div>
+
+        <div class="loading">
+          <span id="loading" class="loader"></span>
+        </div>
+      </div>
+    </div>
+
+    <div id="unableToFindParent" class="unableToFindParent">
+      <div id="unableToFind" class="unableToFind">
+        <h2>Sorry, We're unable to find that!</h2>
+      </div>
+    </div>
+
+    <div id="results"></div>
+
+    <div class="bottomNav">
+      <div class="iconsBottom">
+        <a href="discover.html">
+          <i class="fa-solid fa-compass fa-2x"></i>
+        </a>
+
+        <a href="index.html">
+          <i class="fa-solid fa-house fa-2x"></i>
+        </a>
+
+        <a href="login.html">
+          <i class="fa-solid fa-user fa-2x"></i>
+        </a>
+      </div>
+    </div>
+
+    <script type="module" src="home.js"></script>
+  </body>
+</html>
