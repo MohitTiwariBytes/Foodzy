@@ -18,7 +18,16 @@ import {
 } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-auth.js";
 import { getFirestore } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-firestore.js";
 
-const firebaseConfig = {Your firebase config!};
+const firebaseConfig = {
+	apiKey: "AIzaSyAWQ9yYaROeCBIhUIkwPFWFqMrMAmK0mog",
+  	authDomain: "foodzy-870c4.firebaseapp.com",
+  	databaseURL: "https://foodzy-870c4-default-rtdb.firebaseio.com",
+  	projectId: "foodzy-870c4",
+  	storageBucket: "foodzy-870c4.appspot.com",
+  	messagingSenderId: "606043979290",
+  	appId: "1:606043979290:web:ff51e11ab4c7024c77dba3",
+  	measurementId: "G-CDTB5C8RVZ"
+};
 
 const emailInput = document.getElementById("email");
 const passwordInput = document.getElementById("password");
